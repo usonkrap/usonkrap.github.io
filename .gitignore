@@ -1,0 +1,22 @@
+# Mac files
+.DS_Store
+
+# Jekyll dev or build files
+_site/*
+_development_tool/*
+.sass-cache/*
+*.css.map
+*.scssc
+
+#
+node_modules
+Gemfile.lock
+*.gem
+*.gemspec
+
+#
+_drafts/*
+
+#
+package.json
+package-lock.json

@@ -1,0 +1,30 @@
+// Styling for the home
+.fullscreen {
+  height: 100vh;
+}
+
+.home-heading {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sentence {
+  color: white;
+  text-align: center;
+  line-height: 4em;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+div.horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+div.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

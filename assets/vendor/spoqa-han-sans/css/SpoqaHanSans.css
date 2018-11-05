@@ -1,0 +1,73 @@
+/* Korean */
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('../font/kr/SpoqaHanSansBold.woff2') format('woff2'),
+    url('../font/kr/SpoqaHanSansBold.woff') format('woff'),
+    url('../font/kr/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('../font/kr/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('../font/kr/SpoqaHanSansRegular.woff') format('woff'),
+    url('../font/kr/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('../font/kr/SpoqaHanSansLight.woff2') format('woff2'),
+    url('../font/kr/SpoqaHanSansLight.woff') format('woff'),
+    url('../font/kr/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('../font/kr/SpoqaHanSansThin.woff2') format('woff2'),
+    url('../font/kr/SpoqaHanSansThin.woff') format('woff'),
+    url('../font/kr/SpoqaHanSansThin.ttf') format('truetype');
+}
+
+/* Japanese */
+@font-face {
+    font-family: 'Spoqa Han Sans JP';
+    font-weight: 700;
+    src: local('Spoqa Han Sans JP Bold'),
+    url('../font/jp/SpoqaHanSansJPBold.woff2') format('woff2'),
+    url('../font/jp/SpoqaHanSansJPBold.woff') format('woff'),
+    url('../font/jp/SpoqaHanSansJPBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans JP';
+    font-weight: 400;
+    src: local('Spoqa Han Sans JP Regular'),
+    url('../font/jp/SpoqaHanSansJPRegular.woff2') format('woff2'),
+    url('../font/jp/SpoqaHanSansJPRegular.woff') format('woff'),
+    url('../font/jp/SpoqaHanSansJPRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans JP';
+    font-weight: 300;
+    src: local('Spoqa Han Sans JP Light'),
+    url('../font/jp/SpoqaHanSansJPLight.woff2') format('woff2'),
+    url('../font/jp/SpoqaHanSansJPLight.woff') format('woff'),
+    url('../font/jp/SpoqaHanSansJPLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans JP';
+    font-weight: 100;
+    src: local('Spoqa Han Sans JP Thin'),
+    url('../font/jp/SpoqaHanSansJPThin.woff2') format('woff2'),
+    url('../font/jp/SpoqaHanSansJPThin.woff') format('woff'),
+    url('../font/jp/SpoqaHanSansJPThin.ttf') format('truetype');
+}

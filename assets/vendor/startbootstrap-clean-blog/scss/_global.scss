@@ -1,0 +1,128 @@
+// Global styling for this template
+body {
+  font-size: 1em;
+  color: $gray-900;
+  @include serif-font;
+}
+
+p {
+  line-height: 1.5;
+  margin: 1.8em 0;
+  a {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  @include sans-serif-font;
+}
+
+a {
+  color: $gray-900;
+  @include transition-all;
+  &:focus,
+  &:hover {
+    color: $primary;
+  }
+}
+
+table {
+  table-layout: fixed;
+  background: $gray-100;
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow-x: scroll;
+  display: inline-block;
+  > thead tr {
+    height: 60px;
+    background: #10a777;
+    color: $white;
+  }
+  > tbody {
+    > tr:nth-child(even) {
+      background: $gray-200;
+    }
+    > tr td {
+      min-width: 60px;
+    }
+  }
+  td, th {
+    padding: 0.5em 1em;
+  }
+}
+
+blockquote {
+  font-family: serif;
+  width: 90%;
+  margin: auto;
+  color: $gray-700;
+  padding: 1.2em 1em 1em 2em;
+  border-left: 8px solid $green ;
+  line-height: 1.6;
+  position: relative;
+  background: $gray-100;
+}
+
+blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: $green;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+blockquote span{
+  font-family: inherit; 
+  display:block;
+  color:$gray-800;
+  font-weight: bold;
+  margin-top:0.9em;
+  font-size: 0.9em;
+}
+
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.caption {
+  font-size: 14px;
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  color: $white;
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  color: $white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: $white;
+  background: transparent;
+}

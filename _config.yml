@@ -1,0 +1,28 @@
+# SITE CONFIGURATION
+baseurl:           ""
+url:               "http://usonkrap.github.io"
+title:             usonkrap's Blog # site's title
+description:       "아 귀찮아. 더 간단한 방법 없나." # used by search engines
+email:             usonkrap@gmail.com
+author:            usonkrap
+favicon:           assets/favicon.ico
+
+google_analytics: UA-128202284-1 # Tracking ID, e.g. "UA-000000-01"
+
+# Social Profiles
+github_username:   usonkrap
+
+# PAGINATION
+paginate:          5
+paginate_path:     "/posts/page:num/"
+
+# Liquid Error
+liquid:
+  error_mode:       warn
+  strict_filters:   true
+  strict_variables: true
+
+# Build settings
+markdown:          kramdown
+highlighter:       rouge
+plugins:           [jekyll-feed, jekyll-paginate]
