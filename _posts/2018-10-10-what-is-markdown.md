@@ -1,6 +1,6 @@
 ---
 layout: post
-background: "/img/posts/06.jpg"
+background: ""
 title: "마크다운(MarkDown)에 대해 알아보자"
 subtitle:
 tags: [markdown]
@@ -84,10 +84,10 @@ h1과 h2는 다음과 같이 밑줄로 대체 가능
 1. 순서있는 목록의 첫 번째 항목
 2. 두 번째 항목
     * 순서없는 목록의 서브항목
-0. 사실 숫자는 별 의미없다.
+3. 사실 숫자는 별 의미없다.
     1. 또 다른 순서 있는 서브목록
-    1. 또또 다른 순서 있는 서브목록
-5. 또 다른 항목
+    2. 또또 다른 순서 있는 서브목록
+4. 또 다른 항목
 - 순서없는 항목
     - 서브항목
 
@@ -161,10 +161,10 @@ Reference-style:
 ```
 ---------------------------------------------
 Inline-style:  
-![대체 텍스트](https://raw.githubusercontent.com/usonkrap/usonkrap.github.io/master/img/takagi.jpg "이곳에 이미지 설명을 작성해 주세요.")
+![대체 텍스트](https://raw.githubusercontent.com/usonkrap/usonkrap.github.io/master/img/takagi.jpg "이곳에 이미지 설명을 작성해 주세요."){: width="100%" height="100%"}
 
 Reference-style:  
-![alternative text][image]
+![alternative text][image]{: width="100%" height="100%"}
 
 [image]: https://raw.githubusercontent.com/usonkrap/usonkrap.github.io/master/img/this_is_not_pipe.jpg "this is not pipe"
 
