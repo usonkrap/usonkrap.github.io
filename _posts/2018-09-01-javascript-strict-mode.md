@@ -65,9 +65,9 @@ function myFunc() {
 
 ## 3. 제한되는 경우(Not Allowed in Strict Mode)
 
-백문이 불여일견. **strict mode**에서 아래의 경우 사용이 금지 된다.
+백문이 불여일견. 코드로 직접 보는게 이해가 빠르다.
 
-##### 1. 암시적 변수
+##### 1. 암시적 변수 금지
 ```javascript
 'use strict';
 var foo = 111;  // var 선언 필수 
@@ -75,7 +75,7 @@ bar = 222;       // Uncaught ReferenceError: foo is not defined
 ```
 <br>
 
-##### 2. 읽기전용 프로퍼티(property)에 값 설정
+##### 2. 읽기전용 프로퍼티(property)에 값 설정 금지
 ```javascript
 'use strict';
 var obj1 = {};
@@ -84,7 +84,7 @@ obj1.x = 100;   // Uncaught TypeError: Cannot assign to read only property 'x' o
 ```
 <br>
 
-##### 3. getter만 있는 프로퍼티에 대입
+##### 3. getter만 있는 프로퍼티에 대입 금지
 ```javascript
 'use strict';
 var obj2 = { get x() { return 17; } };
@@ -92,7 +92,7 @@ obj2.x = 5;   // Uncaught TypeError: Cannot set property x of #<Object> which ha
 ```
 <br>
 
-##### 4. 확장불가 객체(object)에 신규 프로퍼티 할당
+##### 4. 확장불가 객체(object)에 신규 프로퍼티 할당 금지
 ```javascript
 'use strict';
 var fixed = {};
@@ -101,21 +101,21 @@ fixed.newProp = "ohai";   // uncaught TypeError: Can't add property newProp, obj
 ```
 <br>
 
-##### 5. 삭제 불가능 프로퍼티 삭제
+##### 5. 삭제 불가능 프로퍼티 삭제 금지
 ```javascript
 "use strict";
 delete Object.prototype;   // Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 ```
 <br>
 
-##### 6. 함수의 매개변수 중복
+##### 6. 함수의 매개변수 중복 금지
 ```javascript
 'use strict';
 function x(p1, p1) {};   // Uncaught SyntaxError: Duplicate parameter name not allowed in this context
 ```
 <br>
 
-##### 7. 변수의 삭제
+##### 7. 변수의 삭제 금지
 ```javascript
 'use strict';
 var obj1 = 123;
@@ -123,14 +123,14 @@ delete obj1;   // Uncaught SyntaxError: Delete of an unqualified identifier in s
 ```
 <br>
 
-##### 8. 8진수 표시
+##### 8. 8진수 표시 금지
 ```javascript
 'use strict';
 var x = 077;    // Uncaught SyntaxError: Octal literals are not allowed in strict mode.
 ```
 <br>
 
-##### 9. eval 또는 argument를 변수로 사용
+##### 9. eval 또는 argument를 변수로 사용 금지
 ```javascript
 'use strict';
 var eval = 123;   // Uncaught SyntaxError: Unexpected eval or arguments in strict mode
@@ -141,11 +141,29 @@ var arguments = 123;   // Uncaught SyntaxError: Unexpected eval or arguments in 
 ```
 <br>
 
-##### 10. with 사용
+##### 10. with 사용 금지
 ```javascript
 'use strict';
 with (Math) {   // Uncaught SyntaxError: Strict mode code may not include a with statement
     x = cos(2)
+};
+```
+<br>
+
+##### 11. 몇몇 확장자는 예약어로 설정되어 있으므로 사용 금지
+- implements
+- interface
+- let
+- package
+- private
+- protected
+- public
+- static
+- yield
+
+```javascript
+'use strict';
+var interface = 100;    // Uncaught SyntaxError: Unexpected strict mode reserved word
 };
 ```
 <br>
