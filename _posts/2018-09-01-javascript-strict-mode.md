@@ -156,7 +156,7 @@ with (Math) {   // Uncaught SyntaxError: Strict mode code may not include a with
 ```
 <br>
 
-##### 11. 몇몇 확장자는 예약어로 설정되어 있으므로 사용 금지
+##### 11. 몇몇 식별자는 예약어로 설정되어 있으므로 사용 금지
 - implements
 - interface
 - let
