@@ -3,22 +3,15 @@ layout: default
 ---
 
 <!-- Page Header -->
-{% if page.background %}
   <header class="masthead fullscreen" style="background-image: url('{{ page.background | prepend: site.baseurl}}')">
-  {% else %}
-    <header class="masthead">
-    {% endif %}
     <div class="overlay"></div>
-    
     <div class="container">
       <div class="row">
         <div class="col-lg-10 col-md-10 mx-auto">
           <div class="horizontal fullscreen">
             <div class="vertical">
               <p class="sentence">
-                모든게 귀찮다.
-                <br>그러니깐,
-                <br> 더욱더 게을러지기 위해 개발을 하는 거다.
+                {{ content }}
             </p>
             </div>
           </div>

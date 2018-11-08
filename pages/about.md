@@ -4,11 +4,12 @@ title: About
 description: 
 permalink: /about/
 background: '/img/background/bg-about.jpg'
-hide: false
+hide: true
 ---
 
 **Version**  
-
+- 0.1.3
+  
 - 0.1.2  
 ページ追加（404）  
 イメージのサイズ最適化  
