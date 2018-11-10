@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl:           ""
-url:               "http://usonkrap.github.io"
+url:               "https://usonkrap.github.io"
 title:             usonkrap's Blog # site's title
 description:       "아 귀찮아. 더 간단한 방법 없나." # used by search engines
 email:             usonkrap@gmail.com
