@@ -6,7 +6,7 @@ layout: default
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl}}')">
 {% else %}
-<header class="masthead">
+<header class="masthead" style="background-image: url('{{ "/img/background/bg-post.jpg" | absolute_url}}')">
 {% endif %}
   <div class="overlay"></div>
   <div class="container">
@@ -17,7 +17,7 @@ layout: default
           {% if page.subtitle %}
           <h2 class="subheading text-center">{{ page.subtitle }}</h2>
           {% endif %}
-          <span class="meta text-right">{{ page.date | date: '%B %d, %Y' }}</span>
+          <span class="meta text-center">{{ page.date | date: '%B %d, %Y' }}</span>
         </div>
       </div>
     </div>

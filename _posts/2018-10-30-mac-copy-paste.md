@@ -1,6 +1,5 @@
 ---
 layout: post
-background:
 title: 맥에서 파일 복사, 붙여넣기, 잘라내기(이동하기) 방법을 알아보자
 tags: [macOS]
 excerpt_separator: <!--more-->

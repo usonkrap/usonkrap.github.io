@@ -1,8 +1,6 @@
 ---
 layout: post
-background: ""
 title: "마크다운(MarkDown)에 대해 알아보자"
-subtitle:
 tags: [markdown]
 excerpt_separator: <!--more-->
 ---
@@ -152,21 +150,21 @@ URL 이나 꺽쇠기호(<,>)로 둘러싼 URL은 자동으로 링크로 변환.
 ---------------------------------------------
 ```markdown
 Inline-style: 
-![대체 텍스트](https://raw.githubusercontent.com/usonkrap/usonkrap.github.io/master/img/takagi.jpg) "이곳에 이미지 설명을 작성해 주세요.")
+![대체 텍스트](https://usonkrap.github.io/img/takagi.jpg) "이곳에 이미지 설명을 작성해 주세요.")
 
 Reference-style:  
 ![alternative text][image]
 
-[image]:  https://raw.githubusercontent.com/usonkrap/usonkrap.github.io/master/img/this_is_not_pipe.jpg "this is not pipe"
+[image]: https://usonkrap.github.io/img/this_is_not_pipe.jpg "this is not pipe"
 ```
 ---------------------------------------------
 Inline-style:  
-![대체 텍스트](https://raw.githubusercontent.com/usonkrap/usonkrap.github.io/master/img/takagi.jpg "이곳에 이미지 설명을 작성해 주세요."){: width="100%" height="100%"}
+![대체 텍스트](https://usonkrap.github.io/img/takagi.jpg "이곳에 이미지 설명을 작성해 주세요."){: width="100%" height="100%"}
 
 Reference-style:  
 ![alternative text][image]{: width="100%" height="100%"}
 
-[image]: https://raw.githubusercontent.com/usonkrap/usonkrap.github.io/master/img/this_is_not_pipe.jpg "this is not pipe"
+[image]: https://usonkrap.github.io/img/this_is_not_pipe.jpg "this is not pipe"
 
 <br><br>
 <i class="fa fa-code fa-2x"></i> 
