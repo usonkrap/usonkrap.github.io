@@ -10,10 +10,15 @@
 
     {{ content }}
 
-    {% include footer.html %}
+    {% if page.index != true %}
+      {% include footer.html %}
+    {% endif %}
 
     {% include scripts.html %}
 
+    <div class="loading">
+        {% include loading.html %}
+    </div>
   </body>
 
 </html>
