@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 
 <html>
+
   {% include head.html %}
+
   <body>
-    <div class="msg">
-      {{ content }}
-    </div>
+    <header class="masthead fullscreen" style="background-image: url('{{ page.background | prepend: site.baseurl}}')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-10 mx-auto">
+            <div class="horizontal fullscreen">
+              <div class="vertical page_not_found">
+                {{ content }}
+                <a href="{{'/' | relative_url }}">
+                  <i class="fa fa-home fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
+
 </html>
