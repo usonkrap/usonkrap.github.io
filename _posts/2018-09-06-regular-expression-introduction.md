@@ -3,6 +3,7 @@ layout: post
 title: 원숭이도 이해하는 정규표현 입문 [번역]
 tags: [regular expression]
 excerpt_separator: <!--more-->
+published: false
 ---
 
 ### 1. 정규표현이란 무엇인가?
