@@ -2,16 +2,6 @@ var gulp = require('gulp');
 
 gulp.task('copy', function() {
 
-  // Start Bootstrap Clean Blog SCSS
-  gulp.src(['node_modules/startbootstrap-clean-blog/scss/**/*'])
-    .pipe(gulp.dest('assets/vendor/startbootstrap-clean-blog/scss'))
-
-  // Start Bootstrap Clean Blog JS
-  gulp.src([
-      'node_modules/startbootstrap-clean-blog/js/clean-blog.min.js',
-    ])
-    .pipe(gulp.dest('assets/vendor/startbootstrap-clean-blog/js'))
-
   // Bootstrap
   gulp.src([
       'node_modules/bootstrap/dist/**/*',
