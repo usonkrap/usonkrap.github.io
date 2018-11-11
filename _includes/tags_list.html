@@ -1,0 +1,13 @@
+{% assign tags = include.tags | split:'|' | sort | uniq %}
+
+<footer>
+  <div class="tag-list">
+  {% if tags.size > 0 %}
+    {% for tag in tags %}
+    <a class="button" href="{{site.baseurl}}/tags#{{ tag | cgi_escape }}">
+      <i class="fa fa-tag fa-fw"></i> {{ tag }}
+    </a>
+    {% endfor %}
+  {% endif %}
+  </div>
+</footer>
