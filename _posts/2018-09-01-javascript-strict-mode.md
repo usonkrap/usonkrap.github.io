@@ -5,8 +5,7 @@ tags: [javascript]
 excerpt_separator: <!--more-->
 ---
 
-자바스크립트 소스코드를 보다보면 가장 처음에 `use strict;`를 선언한 것을 종종 볼 수 있다.
-<!--more-->  
+자바스크립트 소스코드를 보다보면 가장 처음에 `use strict;`를 선언한 것을 종종 볼 수 있다.  
 strict mode를 사용한다라는 뜻인데 strict mode가 무엇이고 왜 쓰는지를 알아보자.
 
 <br>
