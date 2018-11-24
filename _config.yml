@@ -13,7 +13,7 @@ google_analytics: UA-128202284-1 # Tracking ID, e.g. "UA-000000-01"
 github_username:   usonkrap
 
 # PAGINATION
-paginate:          5
+paginate:          10
 paginate_path:     "/posts/page:num/"
 
 # Liquid Error
