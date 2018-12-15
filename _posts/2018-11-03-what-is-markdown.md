@@ -115,6 +115,8 @@ h1과 h2는 다음과 같이 밑줄로 대체 가능
 ```markdown
 [링크](https://www.google.com)
 
+[새창으로 링크](https://www.google.com){: target="_blank" }
+
 [링크 with 링크설명](https://www.google.com "구글 홈페이지")
 
 [상대적링크](../../../posts)
@@ -129,6 +131,8 @@ https://uosonkrap.github.io 또는 <https://uosonkrap.github.io>
 ```
 ---------------------------------------------
 [링크](https://www.google.com)
+
+[새창으로 링크](https://www.google.com){: target="_blank" }
 
 [링크 with 링크설명](https://www.google.com "구글 홈페이지")
 
