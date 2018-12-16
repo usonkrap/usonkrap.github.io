@@ -22,17 +22,17 @@ excerpt_separator: <!--more-->
 -------------
   
 - 1-1. 누구를 위한 글인가?
-- 1-1. 이 글에서 당신이 배울 내용
-- 1-2. 최소한의 React 개발 환경
-- 1-3. state란 무엇인가?
-- 1-4. Redux가 도대체 어떤 문제를 해결해 주는가?
-- 1-5. Redux 꼭 배워야함?
-- 1-6. Redux 안쓰면 안됨?
-- 1-7. Redux store에 대해 알아보자
-- 2-1. Redux reducer에 대해 알아보자
-- 2-2. Redux action에 대해 알아보자
-- 2-3. reducer를 리팩토링 해보자
-- 2-4. Redux store의 Method를 살펴보자
+- 1-2. 이 글에서 당신이 배울 내용
+- 1-3. 최소한의 React 개발 환경
+- 1-4. state란 무엇인가?
+- 1-5. Redux가 도대체 어떤 문제를 해결해 주는가?
+- 1-6. Redux 꼭 배워야함?
+- 1-7. Redux 안쓰면 안됨?
+- 2-1. Redux store에 대해 알아보자
+- 2-2. Redux reducer에 대해 알아보자
+- 2-3. Redux action에 대해 알아보자
+- 2-4. reducer를 리팩토링 해보자
+- 2-5. Redux store의 Method를 살펴보자
 - 3-1. React와 Redux 연결하기
 - 3-2. react-redux
 - 3-3. App component 그리고 Redux store
@@ -45,7 +45,7 @@ excerpt_separator: <!--more-->
 
 <br>
 
-#### 1. 누구를 위한 글인가?
+### 1-1. 누구를 위한 글인가?
 
 다음에 해당된다면 매우 적절하다고 본다.
 - Javascript, ES6 그리고 React를 그럭저럭 이해하고 있다. (*모르면 찾아보지 뭐...*)
@@ -53,14 +53,14 @@ excerpt_separator: <!--more-->
 
 <br>
 
-#### 2. 이 글에서 당신이 배울 내용
+### 1-2. 이 글에서 당신이 배울 내용
 
 - Redux란 무엇인가?
 - Redux를 React와 함께 사용하는 방법
 
 <br>
 
-#### 3. 최소한의 React 개발 환경
+### 1-3. 최소한의 React 개발 환경
 
 시작하기 전에 **React 개발 환경을 구축할 준비가 되었는지 확인**하길 바란다.  
 여기서는 [`create-react-app`](https://github.com/facebook/create-react-app){: target="_blank" }
@@ -72,7 +72,7 @@ excerpt_separator: <!--more-->
 
 <br>
 
-#### 4. state란 무엇인가?
+### 1-4. state란 무엇인가?
 
 **Redux가 무엇인지 이해**하려면 먼저 `state`가 무엇인지 알아야 한다.  
 만약 React로 작업을 한 적이 있다면, state라는 용어는 낯설지 않을것이다.
@@ -143,7 +143,7 @@ state는 **당신 주위에 항상 있다**.
 
 <br>
 
-#### 5. Redux가 도대체 어떤 문제를 해결해 주는가?
+### 1-5. Redux가 도대체 어떤 문제를 해결해 주는가?
 
 전형적인 자바스크립트 어플리케이션은 state로 채워져있다.  
 잘 모르겠다면 여기 몇 가지 state 예가 있다.
@@ -183,7 +183,7 @@ Redux는 **한 곳**에서 state를 관리하며, React의 바깥에 있는 stat
 
 <br>
 
-#### 6. Redux 꼭 배워야함?
+### 1-6. Redux 꼭 배워야함?
 
 Redux는 단어 자체로 대부분의 뉴비들이 겁을 낸다. 하지만 이 글을 보는 당신의 경우는 아니다. **Redux는 그렇게 어렵지 않다**. 핵심은 어떠한 이유에서든 Redux를 배우기 위해 서두르지 말라는 것이다.
 
@@ -216,7 +216,7 @@ Redux도 마찬가지다.
 
 <br>
 
-#### 7. Redux 안쓰면 안됨?
+### 1-7. Redux 안쓰면 안됨?
 
 state 관리를 위해 Redux 또는 Flux(또는 Mobx)를 사용하는 것은 당신에게 달려있다.
 
@@ -235,7 +235,7 @@ Redux를 선택하기 전에 다른 대안에 대해 찾아보자. 특히 React�
 
 그리고 이 사실을 잊지 말도록. React 프로젝트는 Redux를 나중에 포함 하도록 간단히 리팩토링 할 수 있다는 것이다.
 
-결론적으로 나는 다음과 같은 경우에 Redux의 사용을 고려해 볼 만 하다고 생각한다.
+결론적으로 나는 **다음과 같은 경우에 Redux의 사용을 고려**해 볼 만 하다고 생각한다.
 
 - React 컴포넌트가 같은 state를 참조해야 하지만 서로 부모/자식 관계가 아니다.
 - state를 props와 함께 여러 컴포넌트로 넘기는 것에 뭔가 어색함(불편함)을 느끼기 시작한다.
@@ -248,7 +248,7 @@ Redux는 소규모 앱에서는 유용하지 않다는 점에 유의하길 바�
 
 <br>
 
-#### 8. Redux store에 대해 알아보자
+### 2-1. Redux store에 대해 알아보자
 
 **Redux에서는 store가 모든 부분을 지휘 한다**.  
 뭐라고??
@@ -288,13 +288,13 @@ createStore는 첫번째 인수로 reducer를 갖는다. 여기선 rootReducer�
 
 그런데 reducer는 또 뭐지??
 
-Redux에서 reducer는 state를 생산한다. 하지만 여기서 state는 당신이 직접 만드는 무언가가 아니다.
+Redux에서 reducer는 state를 생산한다. 하지만 여기서 말하는 state는 당신이 직접 만드는 무언가가 아니다.
 
 이 사실을 잘 생각하면서 Redux reducer로 발길을 옮겨보자.
 
 <br>
 
-#### 9. Redux reducer에 대해 알아보자
+### 2-2. Redux reducer에 대해 알아보자
 
 그럼 reducer란 무엇인가?
 
@@ -334,7 +334,7 @@ action에 대해선 다음 섹션에서 자세히 알아 보기로 하고, 그 �
 
 <br>
 
-#### 10. Redux action에 대해 알아보자
+### 2-3. Redux action에 대해 알아보자
 
 Redux에서 reducer는 의심의 여지없이 가장 중요한 개념이다. reducer는 어플리케이션의 state를 제공한다.
 
@@ -419,7 +419,7 @@ reducer는 state를 어떻게 처리해야 하는지를 판단하기 위해 이 
 
 <br>
 
-#### 11. reducer를 리팩토링 해보자
+### 2-4. reducer를 리팩토링 해보자
 
 다음 단계로 넘어가기 전에 주요 Redux 개념을 다시 요약하자면,
 
@@ -516,7 +516,7 @@ Redux reducer는 무엇으로 만들어졌는가?
 
 <br>
 
-#### 12. Redux store의 Method를 살펴보자
+### 2-5. Redux store의 Method를 살펴보자
 
 이번엔 정말 간단할 것이다.
 
@@ -524,9 +524,9 @@ Redux가 어떻게 동작하는지 빠른게 이해하기 위해 브라우저의
 
 Redux는 2KB의 작은 라이브러리이다. Redux store는 state를 관리하기 위한 간단한 [API](https://redux.js.org/api/store#store){:target="_blank"}를 제공한다. 중요한 method는 다음과 같다.
 
-- 현재 state를 반환하는 `getState`.
-- action을 보내는 `dispatch`.
-- state의 변화에 귀를 기울이는 `subscribe`.
+- 현재 state를 반환하는 `getState()`.
+- action을 보내는 `dispatch()`.
+- state의 변화에 귀를 기울이는 `subscribe()`.
 
 브라우저의 콘솔에서 시험해 보기위해 글로벌 변수로써 앞에서 만든 store와 action을 가져와서 다음과 같이 수정하자.  `src/App.js`
 
@@ -622,31 +622,361 @@ Redux를 시작하기 위해 알아야 할 것은 이것뿐이다.
 
 <br>
 
-#### 13. React와 Redux 연결하기
+### 3-1. React와 Redux 연결하기
+
+나는 Redux를 배운 후 생각보다 그렇게 복잡하지 않다는 것을 깨달았다.
+
+**getState()**로 현재의 state에 접근하는 방법을 알았고, **dispatch()**로 action을 dispatch하는 방법을 알았다. 그리고 **subscribe()**로 state의 상태변화를 알 수 있었다.
+
+하지만 React와 Redux를 어떻게 결합해야 할지를 몰랐다.
+
+나는 스스로에게 물었다.  
+React 컴포넌트 안에서 getState를 불러와도 되나? 어떻게 action을 컴포넌트로부터 dispatch 하지? 등등
+
+Redux는 그 자체로 프레임워크에 구애받지 않는다. Angular, React, 아니면 바닐라 자바스크립트와 함께 써도 된다. Redux와 당신이 좋아하는 프레임워크/라이브러리를 함께 연결해주는 무언가가 있다.
+
+React에서는 [react-redux](https://redux.js.org/basics/usage-with-react){:target="_blank"}가 바로 그것이다.
+
+그럼 설치를 해 보자.
+
+{% highlight shell %}
+  $ yarn add react-redux --dev
+{% endhighlight %}
+
+
+React와 Redux가 어떻게 연동되는지 확인하기 위해 우리는 매우 단순한 React 어플리케이션을 준비할 것이다. 이 어플리케이션은 다음과 같은 컴포넌트로 구성된다.
+
+- App component
+- articles를 보여줄 List component
+- 새로운 articles를 추가하기 위한 Form component
 
 <br>
 
-#### 14. react-redux
+### 3-2. react-redux
+
+`react-redux`는 효율적으로 React와 Redux를 묶어(*binding*) 주는 작은 라이브러리 이다.
+
+이 라이브러리의 가장 중요한 method는 [connect](https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connect){:target="_blank"}이다.
+
+그러면 react-redux의 `connect`는 무엇을 하는가?
+
+그야 당연히 React 컴포넌트와 Redux store를 연결해 주겠지.
+
+경우에 따라 두세개의 매개변수와 함께 connect를 사용한다.  
+그리고 알아야 할 기본 함수는 다음과 같다.
+- mapStateToProps()
+- mapDispatchToProps()
+
+**mapStateToProps**는 react-redux에서 무엇을 하는가? 이름 그대로 **Redux state를 React 컴포넌트의 props와 연결**한다. 그렇게 함으로써, 연결된 React 컴포넌트는 그것이 필요로 하는 store의 정확한 부분에 접근할 수 있다.
+
+**mapDispatchToProps**는 react-redux에서 무엇을 하는가? mapDispatchToProps 역시 위와 비슷하지만 **Redux action을 props와 연결**한다는 차이가 있다. 이와 같이 연결된 React 컴포넌트는 action을 dispatch할 수 있다.
+
+모든 것이 명확해졌는지? 그렇지 않은 경우 잠시 멈추고 다시 읽어 보길 바란다. 배워야 할 것이 많다는 것을 안다. 그리고 그것들은 시간이 필요하다. Redux를 지금 잘 모르더라도 걱정하지 마라.
+
+다음 섹션에서는 마침내 손가락을 움직여 보도록 할 것이다.
+
 
 <br>
 
-#### 15. App component 그리고 Redux store
+### 3-3. App component 그리고 Redux store
+
+mapStateToProps가 Redux state의 일부를 React 컴포넌트의 props에 연결하는 것을 보았다. 그러면 궁금해할지도 모른다. 이것이 Redux를 React와 연결하기에 충분한가?
+
+아니, 그렇지 않아.
+
+Redux와 React의 연결을 시작하기 위해 [Provider](https://github.com/reduxjs/react-redux/blob/master/docs/api.md#provider){:target="_blank"}를 사용할 것이다.
+
+`Provider`는 react-redux로 부터 나온 [high order component](https://reactjs.org/docs/higher-order-components.html){:target="_blank"}다.
+
+`Provider`로 React 어플리케이션을 감싸서 Redux의 store를 인식하도록 한다.
+
+왜?
+
+Redux에서 store가 모든것을 관리 한다는 것을 알 것이다. 따라서 React는 Redux의 state와 action에 dispatch 하기 위해 store와 대화를 해야 한다.
+
+이론은 충분하니, `src/index.js` 파일을 열고 다음과 같이 싹 바꿔주자.
+
+{% highlight javascript %}
+  // src/index.js
+
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import { Provider } from 'react-redux';
+  import store from './js/store/index'
+  import 'bootstrap/dist/css/bootstrap.min.css'
+  import './index.css';
+  import App from './App';
+  import * as serviceWorker from './serviceWorker';
+
+  ReactDOM.render(
+    <Provider store={store}>
+      <App />
+    </Provider>,
+    document.getElementById('root'));
+
+  serviceWorker.unregister();
+
+{% endhighlight %}
+
+보이는가? Provider는 당신의 전제 React 어플리케이션을 감싸고 있다. 게다가 props로 store를 얻는다.
+
+이제 App 컴포넌트를 만들어 보자. 특별한건 없다. 그저 List 컴포넌트를 불러와 render할 뿐이다.
+
+`App.js`를 다음과 같이 수정해 보자.
+
+{% highlight javascript %}
+  // src/App.js
+
+  import React from "react";
+  import List from "./js/components/List";
+
+  const App = () => (
+    <div className="row mt-5">
+      <div className="col-md-4 offset-md-1">
+      <h2>Articles</h2>
+        <List />
+      </div>
+    </div>
+  );
+
+  export default App;
+{% endhighlight %}
+
+그리고 **List** 컴포넌트를 만들어 보자.
 
 <br>
 
-#### 16. List component 그리고 Redux store
+### 3-4. List component 그리고 Redux store
+
+우리는 아직까지 특별한 일을 하지 않았다.
+
+그러나 우리의 새로운 컴포넌트인 List는 Redux store와 상호작용할 것이다.
+
+간략한 요약: React 컴포넌트를 Redux와 연결하는 열쇠는 connect이다.
+
+connect는 적어도 하나의 매개변수를 갖는다.
+
+articles 목록을 가져오는 List는 단지 mapStateToProps에 의해 `state.articles`와 컴포넌트의 연결의 문제다.
+
+`src/js/components` 폴더 안에 `List.js`를 만들자.
+
+{% highlight javascript %}
+  // src/js/components/List.js
+
+  import React from "react";
+  import { connect } from "react-redux";
+
+  const mapStateToProps = state => {
+    return { 
+      articles: state.articles
+    };
+  };
+
+  const ConnectedList = ({ articles }) => (
+    <ul className="list-group list-group-flush">
+      {articles.map(el => (
+        <li className="list-group-item" key={el.id}>
+          {el.title}
+        </li>
+      ))}
+    </ul>
+  );
+
+  const List = connect(mapStateToProps)(ConnectedList);
+
+  export default List;
+{% endhighlight %}
+
+List 컴포넌트는 `articles` 배열로부터 복사된 `articles`를 props으로 받는다. 이 articles 배열은 reducer로부터 반환된 Redux state에 있는 배열이다.
+
+마지막으로 컴포넌트는 List로써 내보내지는데 이 List는 **stateless** 컴포넌트인 ConnectedList와 Redux store를 연결한 결과이다.
+
+stateless 컴포넌트는 고유의 로컬 state를 가지고 있지 않다. 데이터는 props로써 전달된다.
+
+아직도 헷갈리나? 나도 그랬다. **연결** 방법을 이해하는 데는 시간이 걸릴 것이다. 겁내지 않는 한, Redux를 배우는 길은 "아하!"의 순간들로 포장되어 있다.
+
+**connect**과 **mapStateToProps**를 확실히 이해하고 다음 섹션으로 넘어가는 것을 추천한다.
 
 <br>
 
-#### 17. Form component 그리고 Redux action
+### 3-5. Form component 그리고 Redux action
+
+앞으로 만들 Form 컴포넌트는 List보다 조금 복잡하다. 그것은 우리의 어플리케이션에 새로운 아이템을 추가하기 위한 폼이다.
+
+게다가 그것은 **stateful 컴포넌트**다.
+
+stateful component? 우리는 지금 state를 따로 관리하는 Redux에 대해 이야기 하고 있는데, 왜 로컬 state를 갖는 stateful 컴포넌트로 Form을 만드는걸까??
+
+**Redux를 사용할 때에도, stateful 컴포넌트를 갖는 것은 꽤 괜찮다**.
+
+모든 어플리케이션의 state가 Redux 안으로 들어갈 필요는 없다.
+
+이 예제에서 나는 다른 컴포넌트들이 Form 컴포넌트의 로컬 state에 대해 인식하는 것을 원하지 않는다.
+
+그럼 Form 컴포넌트는 무엇을 하는가?
+
+바로 폼양식을 제출할 때 로컬 state를 업데이트하기 위한 로직이 포함되어 있다. 그리고 props로써 Redux action을 받는다. 이러한 방식으로 **addArticle action을 dispatch하여 글로벌 state를 업데이트**할 수 있다.
+
+`Form.js`를 `src/js/components`에 만들어 보자.
+
+{% highlight javascript %}
+  // src/js/components/Form.js
+
+  import React, { Component } from "react";
+  import { connect } from "react-redux";
+  import uuidv1 from "uuid";
+  import { addArticle } from "../actions/index";
+
+  const mapDispatchToProps = dispatch => {
+    return {
+      addArticle: article => dispatch(addArticle(article))
+    };
+  };
+
+  class ConnectedForm extends Component {
+    constructor() {
+      super();
+      this.state = {
+        title: ""
+      };
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+      this.setState({
+        [event.target.id]: event.target.value
+      });
+    }
+
+    handleSubmit(event) {
+      event.preventDefault();
+      const { title } = this.state;
+      const id = uuidv1();
+      this.props.addArticle({ title, id });
+      this.setState({
+        title: ""
+      });
+    }
+
+    render() {
+      const { title } = this.state;
+      return (
+        <form onSubmit={this.handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="title">Title</label>
+            <input
+              type="text"
+              className="form-control"
+              id="title"
+              value={title}
+              onChange={this.handleChange}
+            />
+          </div>
+          <button type="submit" className="btn btn-success btn-lg">
+            SAVE
+          </button>
+        </form>
+      );
+    }
+  }
+
+  const Form = connect(null, mapDispatchToProps)(ConnectedForm);
+
+  export default Form;  
+{% endhighlight %}
+
+**mapDispatchToProps** 그리고 **connect** 이외에도 표준 React로 채워져 있다.
+
+**mapDispatchToProps는 Redux action을 React props에 연결한**다. 이러한 방법으로 연결된 컴포넌트가 action을 dispatch할 수 있다.
+
+handleSubmit 안에서 어떻게 action을 dispatch하는지 보이는가?
+
+{% highlight javascript %}
+// ...
+  handleSubmit(event) {
+    event.preventDefault();
+    const { title } = this.state;
+    const id = uuidv1();
+    this.props.addArticle({ title, id }); // Redux와 관련된 부분!!
+    this.setState({
+      title: ""
+    });
+  }
+// ...
+{% endhighlight %}
+
+마지막으로 컴포넌트는 Form으로써 내보내지는데 이 Form은 ConnectedForm과 Redux store를 연결한 결과이다.
+
+{% highlight javascript %}
+// ...
+  const Form = connect(null, mapDispatchToProps)(ConnectedForm);
+// ...
+{% endhighlight %}
+
+위의 Form예제와 같이 mapStateToProps가 없을 경우에는 connect의 첫 번째 매개변수는 `null` 이어야 한다. 
+
+자, 이제 모든 컴포넌트가 준비가 되었다.
+
+`App.js`안에 Form 컴포넌트를 추가하자.
+
+{% highlight javascript %}
+  // src/App.js
+
+  import React from "react";
+  import List from "./js/components/List";
+  import Form from "./js/components/Form";
+
+  const App = () => (
+    <div className="row mt-5">
+      <div className="col-md-4 offset-md-1">
+        <h2>Articles</h2>
+        <List />
+      </div>
+      <div className="col-md-4 offset-md-1">
+        <h2>Add a new article</h2>
+        <Form />
+      </div>
+    </div>
+  );
+
+  export default App;
+{% endhighlight %}
+
+uuid를 설치해 주고
+
+{% highlight shell %}
+  $ yarn add uuid --dev
+{% endhighlight %}
+
+스타일을 위해서 bootstrap도 설치했다.
+{% highlight shell %}
+  $ yarn add bootstrap --dev
+{% endhighlight %}
+
+React 어플리케이션을 시작해 보자.
+{% highlight shell %}
+  $ yarn start
+{% endhighlight %}
+
 
 <br>
 
-#### 18. 마무리
+### 4-1. 마무리
+
+나는 당신이 이 튜토리얼로부터 무언가를 배웠으면 좋겠다.
+
+Redux를 선택하고, 가지고 놀고, 모든 개념을 흡수하는 시간을 가져라.
+
+나는 백지 상태에서 작은 단계를 거쳐서 Redux를 이해하게 되었다. 여러분도 할 수 있다!
+
+또한, **당신의 어플리케이션에서 Redux를 사용해야 하는 이유와 여부**를 조사하기 위해 시간을 들여야 한다.
+
+어느 쪽이든 Redux를 투자로 생각하라: 배우는 것은 100% 가치 있는 일이다.
 
 <br>
 
-#### 19. 후기
+### 4-2.  후기
 
 
 {% highlight shell %}

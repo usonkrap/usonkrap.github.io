@@ -13,6 +13,9 @@ node_modules
 Gemfile.lock
 *.gem
 *.gemspec
+Gemfile
+gulpfile.js
+
 
 #
 _drafts/*
