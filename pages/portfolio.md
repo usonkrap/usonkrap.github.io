@@ -1,8 +1,8 @@
 ---
-layout: portfolio
-title: Portfolio
+layout: projects
+title: Projects
 description: 
-permalink: /portfolio/
+permalink: /projects/
 background: '/img/background/bg-search.jpg'
 hide: true
 ---
